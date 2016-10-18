@@ -31,7 +31,8 @@ void teclado(unsigned char key, int x, int y) {
 		if (transladaY < 160){
 			transladaY = transladaY + 10;
 			printf("\n o valor da translacao e %.2f\n", transladaY);
-		}else{
+		}
+		else{
 			transladaY = 0;
 			printf("\n o valor da translacao e %.2f\n", transladaY);
 		}
@@ -73,7 +74,7 @@ void tamanhoJanela(int w, int h) { //w: width (comprimento)|h: height (altura)
 
 void disparo(){
 	glPushMatrix();
-	glTranslatef(transladaX, transladaY -10, transladaZ);
+	glTranslatef(transladaX, transladaY - 10, transladaZ);
 	glLineWidth(5);
 	glBegin(GL_LINES);
 	glColor3f(1.0, 1.0, 0.0);
